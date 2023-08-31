@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>b1</title>
+</head>
+<body>
+<script>
+    arr([1, 6, 5, 9, 7, 4])
+
+    function arr(ax) {
+        let max = ax[0];
+        for (let i = 0; i < ax.length; i++) {
+            if (max < ax[i]) {
+                max = ax[i];
+            }
+        }
+        let max11 = ax.indexOf(max);
+        ax.splice(max11, 1);
+        let max2 = ax[0];
+        for (let j = 0; j < ax.length; j++) {
+            if (ax[j] > max2) {
+                max2 = ax[j];
+            }
+        }
+        let max22 = ax.indexOf(max2);
+        ax.splice(max22, 1);
+        let max3 = ax[0];
+        for (let j = 0; j < ax.length; j++) {
+            if (ax[j] > max3) {
+                max3 = ax[j];
+            }
+        }
+        console.log(max3)
+        return max3
+    }
+</script>
+</body>
+</html>
