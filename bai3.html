@@ -8,24 +8,8 @@
 <script>
     // checkstring("hello", "bello")
     function checkString(a, b) {
-        let x = a.splice("")
-        let xx = b.splice("")
-        let ab = xx.indexOf(x[0])
-        if (ab === -1) {
-            return false;
-        }
-        let j = 0;
-        for (let i = ab; i < xx.length; i++, j++) {
-            if (x[j] === xx[i]) {
-                if ((i = x.length - 1)) {
-                    return true;
-                }
-                continue;
-            } else return false;
-        }
-    }
 
-    console.log(checkString("", "abc"))
+    
 </script>
 </body>
 </html>
